@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavya Singh | UI/UX Designer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">B<span>.</span></a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact Us</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-greeting">Hello, I'm Bhavya Singh<span class="line-accent"></span></div>
+                <h1 class="hero-title">UI/UX <br><span class="gradient-text">Designer</span></h1>
+                <p class="hero-subtitle">
+                    I design intuitive, user-centered digital experiences that are beautiful, functional, and deeply impactful. Bridging technical clarity with visual storytelling.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="Bhavya_Singh_pdf.pdf" target="_blank" download="Bhavya_Singh_Resume.pdf" class="btn btn-secondary">Resume <i class="fa-solid fa-download"></i></a>
+                </div>   
+                <div class="hero-footer-email">
+                    <i class="fa-regular fa-envelope"></i>
+                    <a href="mailto:singhbhavya0551@gmail.com">singhbhavya0551@gmail.com</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="illustration-canvas">
+                    <div class="abstract-blob"></div>
+                    <img src="Photo.png" alt="Bhavya Singh - UI/UX Designer" class="hero-photo">
+                    <div class="floating-badge badge-1"><i class="fa-brands fa-figma"></i> Figma</div>
+                    <div class="floating-badge badge-2"><i class="fa-solid fa-layer-group"></i> Design Systems</div>
+                    <div class="floating-badge badge-3"><i class="fa-solid fa-mobile-screen"></i> Mobile</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="section-container">
+            <div class="about-grid">
+                
+                <div class="about-bio-column">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="about-bio">
+                        <p>
+                            I am a UI/UX Designer focused on creating intuitive and user-centered digital experiences for mobile and web applications. My background in academic coordination, operations, and data analysis has helped me develop strong problem-solving, communication, and analytical skills that I apply directly to complex design challenges.
+                        </p>
+                        <p>
+                            I have hands-on experience designing wireframes, user flows, interactive prototypes, and responsive interfaces. Through deep exploration of user behavior, I work passionately on products that perfectly balance user needs with practical business goals.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="skills-wrapper">
+                    <h2 class="section-title">Core Expertise</h2>
+                    <div class="skills-grid">
+                        <div class="skill-tag">Figma</div>
+                        <div class="skill-tag">Wireframing</div>
+                        <div class="skill-tag">Prototyping</div>
+                        <div class="skill-tag">User Flows</div>
+                        <div class="skill-tag">Design Systems</div>
+                        <div class="skill-tag">Responsive UI Design</div>
+                        <div class="skill-tag">UX Problem Solving</div>
+                        <div class="skill-tag">User Experience Design</div>
+                        <div class="skill-tag">Mobile App Design</div>
+                        <div class="skill-tag">Web Design</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="section-container">
+            <h2 class="section-title">Selected Works</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card" onclick="openProjectModal('modal-ride')">
+                    <div class="project-preview">
+                      <img src="Thumbnail_ride_sharing.png" alt="Smart Ride-Sharing Mobile App Interface Cover">
+                    </div>
+                    <div class="project-meta">
+                        <h3 class="project-name">Smart Ride-Sharing Mobile App</h3>
+                        <p class="project-text">Comprehensive UI/UX case study detailing a smart ride-sharing platform that enables commuters traveling on similar routes to share rides, split costs, and enjoy a seamless mobility experience through an intuitive mobile interface.</p>
+                        <span class="project-link-trigger">Explore Case Study <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openProjectModal('modal-food')">
+                    <div class="project-preview">
+                      <img src="Thumbnail_food.png" alt="Food Delivery Mobile App Dashboard Cover">
+                    </div>
+                    <div class="project-meta">
+                        <h3 class="project-name">Food Delivery Mobile App</h3>
+                        <p class="project-text">An interactive mobile interface engineered around personalized food discovery, real-time checkout updates, and intuitive layouts.</p>
+                        <span class="project-link-trigger">Explore Case Study <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openProjectModal('modal-chat')">
+                    <div class="project-preview">
+                       <img src="Thumbnail_chatapp.png" alt="Real-time Chat Application Interface Cover">
+                    </div>
+                   <div class="project-meta">
+                      <h3 class="project-name">Chat Application</h3>
+                      <p class="project-text">A minimalist, real-time messaging interface built with a clean light-mode aesthetic, modern messaging app that enables seamless real-time chats, stories, group conversations, and personalized user profiles in one connected social experience.</p>
+                      <span class="project-link-trigger">Explore Case Study <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="section-container">
+            <div class="contact-card">
+                <div class="contact-intro">
+                    <h2 class="contact-heading">Let's Work Together</h2>
+                    <p>Have an interesting project or visual problem to solve? Drop me a line and let's bring it to life.</p>
+                </div>
+                <form id="portfolioContactForm" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="userName">Your Name</label>
+                            <input type="text" id="userName" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="userEmail">Email Address</label>
+                            <input type="email" id="userEmail" name="email" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="userMessage">Your Message</label>
+                        <textarea id="userMessage" name="message" rows="5" placeholder="Tell me a bit about your product goals..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-submit">Send Message <i class="fa-regular fa-paper-plane"></i></button>
+                    <div id="formFeedback" class="form-feedback"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <p class="copyright">&copy; 2026 Bhavya Singh. All rights reserved.</p>
+            <div class="social-channels">
+                <a href="https://www.linkedin.com/in/bhavyadesigner" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:singhbhavya0551@gmail.com" aria-label="Gmail"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer >
+
+    <div class="project-modal" id="modal-ride">
+        <div class="modal-content">
+            <button type="button" class="modal-close-btn" onclick="closeProjectModal('modal-ride')"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-hero-img">
+                <img src="Thumbnail_ride_sharing.png" alt="Smart Ride-Sharing Mobile App">
+            </div>
+            <div class="modal-body-content">
+                <span class="modal-tag">UI/UX Case Study</span>
+                <h2 class="modal-title">Smart Ride-Sharing Mobile App</h2>
+                <p class="modal-description">A deeper look into how this application transforms daily city commuting by mapping optimal multi-passenger routes and automating split-fare calculation models seamlessly.</p>
+                <div class="modal-details-grid">
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-circle-exclamation"></i> The Problem</h4>
+                        <p>Commuters face high individual travel expenses, unpredictable peak pricing fluctuations, and congested traffic routes with empty passenger seats running identical trajectories.</p>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-wand-magic-sparkles"></i> The Solution</h4>
+                        <p>Engineered an intuitive interface utilizing real-time cross-routing algorithms to let commuters book shared trips instantly, balancing rapid boarding windows with highly secure digital identity checkpoints.</p>
+                    </div>
+                </div>
+                <div class="modal-actions-footer">
+                    <a href="https://www.figma.com/proto/Q7YRYN4D1Wa82sSPPcbMCv/Smart-Ride-Sharing-Mobile-App-UI-UX-Case-Study?node-id=46-10659&t=aRG4BIaYLJoBKNZ2-1&scaling=scale-down&content-scaling=responsive&page-id=46%3A678&starting-point-node-id=46%3A10659" target="_blank" class="btn btn-primary">Open Figma Prototype <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-modal" id="modal-food">
+        <div class="modal-content">
+            <button type="button" class="modal-close-btn" onclick="closeProjectModal('modal-food')"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-hero-img">
+                <img src="Thumbnail_food.png" alt="Food Delivery Mobile App">
+            </div>
+            <div class="modal-body-content">
+                <span class="modal-tag">Mobile Application</span>
+                <h2 class="modal-title">Food Delivery Mobile App</h2>
+                <p class="modal-description">A micro-interaction intensive design tailored to optimize ordering processing loops and minimize choice overload parameters.</p>
+                <div class="modal-details-grid">
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-circle-exclamation"></i> The Problem</h4>
+                        <p>Users drop out of purchasing funnels when checkout systems take too many screen layers or when recommendations do not fit current contextual cravings.</p>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-wand-magic-sparkles"></i> The Solution</h4>
+                        <p>Designed clean, single-screen ordering architectures alongside highly responsive persistent status trackers keeping friction levels close to zero.</p>
+                    </div>
+                </div>
+                <div class="modal-actions-footer">
+                    <a href="https://www.figma.com/proto/NHNJ3baqQDnEAEBUNMQfjj/Food-Delivery-Mobile-App?node-id=60-2608&t=12oJZ6p66VIsOuWI-1" target="_blank" class="btn btn-primary">Open Figma Workspace <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-modal" id="modal-chat">
+        <div class="modal-content">
+            <button type="button" class="modal-close-btn" onclick="closeProjectModal('modal-chat')"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-hero-img">
+                <img src="Thumbnail_chatapp.png" alt="Chat Application">
+            </div>
+            <div class="modal-body-content">
+                <span class="modal-tag">Product Design</span>
+                <h2 class="modal-title">Real-time Chat Application</h2>
+                <p class="modal-description">An exploration of lightweight modern interface paradigms built on a clean grid framework to optimize text communication and real-time social stories.</p>
+                <div class="modal-details-grid">
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-circle-exclamation"></i> The Problem</h4>
+                        <p>Cluttered interfaces make multiple structural columns hard to scan quickly, slowing down fast communication cycles on smaller screens.</p>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-wand-magic-sparkles"></i> The Solution</h4>
+                        <p>Created a structural modular framework built on high white-space margins, bringing direct accessibility to chat histories, group rooms, and dynamic media shared over the line.</p>
+                    </div>
+                </div>
+                <div class="modal-actions-footer">
+                    <a href="https://www.figma.com/proto/eUXNwOJA767AWzkmLlxyNA/Chat-Application-UI-UX--Community-?node-id=96-853&t=0XKjyJPEz1UjFkBC-1" target="_blank" class="btn btn-primary">View Figma Prototype <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
