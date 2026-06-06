@@ -676,6 +676,34 @@ a {
     background-color: #E2E2E8;
 }
 
+/* ─── CONTACT FORM FEEDBACK STATES ─── */
+.form-feedback {
+    display: none;
+    margin-top: 16px;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s var(--anim-smooth);
+}
+
+.form-feedback.active {
+    display: block;
+    animation: fadeIn 0.4s var(--anim-smooth);
+}
+
+.form-feedback.error {
+    background-color: rgba(255, 74, 74, 0.1);
+    border: 1px solid #FF4A4A;
+    color: #FF4A4A;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 /* ==========================================================================
    7. FOOTER WRAPPER
    ========================================================================== */
