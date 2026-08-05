@@ -102,6 +102,17 @@
         <div class="section-container">
             <h2 class="section-title">Selected Works</h2>
             <div class="projects-grid">
+
+                 <div class="project-card" onclick="openProjectModal('modal-goal')">
+                    <div class="project-preview">
+                      <img src="ThumbnailGLV.png" alt="Goal Line Venture Group">
+                    </div>
+                    <div class="project-meta">
+                        <h3 class="project-name">Goal Line Venture Group</h3>
+                        <p class="project-text">Designed a modern and user-centered B2B corporate website concept that improves product discovery, simplifies navigation, and helps industrial clients quickly explore mining and tunneling solutions while increasing business inquiries through clear information architecture and intuitive user flows.</p>
+                        <span class="project-link-trigger">Explore More <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
                 
                 <div class="project-card" onclick="openProjectModal('modal-ride')">
                     <div class="project-preview">
@@ -183,6 +194,33 @@
         </div>
     </footer >
 
+    <div class="project-modal" id="modal-goal">
+        <div class="modal-content">
+            <button type="button" class="modal-close-btn" onclick="closeProjectModal('modal-goal')"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-hero-img">
+                <img src="ThumbnailGLV.png" alt="Goal Line Venture Group Website">
+            </div>
+            <div class="modal-body-content">
+                <span class="modal-tag">Freelance</span>
+                <h2 class="modal-title">Goal Line Venture Group Website</h2>
+                <p class="modal-description">Designed a professional and responsive B2B corporate website for Goal Line Venture Group to showcase mining and tunneling solutions, helping industrial clients easily explore products, understand company services, and connect with the sales team through a clean and intuitive user experience.</p>
+                <div class="modal-details-grid">
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-circle-exclamation"></i> The Problem</h4>
+                        <p>Industrial companies often need a website that clearly communicates their products, services, and expertise. Without a structured information architecture, intuitive navigation, and clear call-to-action sections, potential clients may struggle to discover products, understand technical offerings, or submit business inquiries efficiently.</p>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-wand-magic-sparkles"></i> The Solution</h4>
+                        <p>Designed a modern corporate website with a clear navigation structure, organized product categories, responsive layouts, consistent design system, and dedicated inquiry sections. The interface enables business users to browse products, learn about company capabilities, and contact the sales team quickly through an intuitive and user-friendly experience.</p>
+                    </div>
+                </div>
+                <div class="modal-actions-footer">
+                    <a href="https://goallineventuregroup.com/index.html" target="_blank" class="btn btn-primary">Open Website <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="project-modal" id="modal-ride">
         <div class="modal-content">
             <button type="button" class="modal-close-btn" onclick="closeProjectModal('modal-ride')"><i class="fa-solid fa-xmark"></i></button>
@@ -263,6 +301,7 @@
             </div>
         </div>
     </div>
+    
 
     <script src="script.js"></script>
 </body>
